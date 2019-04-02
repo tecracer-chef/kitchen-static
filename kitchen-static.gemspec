@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["theinen@tecracer.de"]
   spec.summary       = "Test Kitchen driver for static hosts"
   spec.description   = "Test Kitchen driver for static hosts"
-  spec.homepage      = "https://github.com/tecracer_theinen/kitchen-static"
+  spec.homepage      = "https://github.com/tecracer-theinen/kitchen-static"
   spec.license       = "Apache-2.0"
 
   spec.files         = Dir["LICENSE", "lib/**/*"]
