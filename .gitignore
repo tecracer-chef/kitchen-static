@@ -1,0 +1,15 @@
+/.bundle/
+/.yardoc
+/Gemfile.lock
+/_yardoc/
+/doc/
+/pkg/
+/spec/reports/
+/tmp/
+*.bundle
+.direnv/
+.envrc
+.ruby-version
+.chef
+local/
+.vscode/
