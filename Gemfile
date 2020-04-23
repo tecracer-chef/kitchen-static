@@ -9,7 +9,7 @@ end
 group :debug do
   gem "pry"
   gem "guard"
-  gem "guard-shell"
+  gem "guard-rake"
 end
 
 # If you want to load debugging tools into the bundle exec sandbox,
