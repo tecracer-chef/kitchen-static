@@ -19,8 +19,11 @@ Gem::Specification.new do |spec|
   spec.required_ruby_version = ">= 2.3"
 
   spec.add_dependency "test-kitchen", ">= 1.16", "< 3.0"
+  spec.add_dependency "mixlib-shellout", "~> 3.0"
 
   spec.add_development_dependency "bundler", ">= 1.16"
+  spec.add_development_dependency "guard", "~> 2.16"
+  spec.add_development_dependency "guard-rake", "~> 1.0"
   spec.add_development_dependency "rake", "~> 12.0"
   spec.add_development_dependency "yard", "~> 0.9"
 end

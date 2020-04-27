@@ -19,3 +19,14 @@ YARD::Rake::YardocTask.new do |t|
 end
 
 task default: [:style]
+
+require "guard"
+require "guard/commander"
+
+desc "Watch for source changes and redeploy Gem"
+task :guard do
+  Guard.start({ no_interactions: true })
+  while ::Guard.running do
+    sleep 0.5
+  end
+end
