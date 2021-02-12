@@ -1,0 +1,22 @@
+---
+name: Linting
+
+on: push
+
+jobs:
+  lint:
+    name: Lint code
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up Ruby 2.6
+        uses: actions/setup-ruby@v1
+        with:
+          ruby-version: 2.6.x
+
+      - name: Install necessary gems
+        run: bundle install --with=development
+
+      - name: Run Markdown Linting
+        uses: actionshub/markdownlint@master
